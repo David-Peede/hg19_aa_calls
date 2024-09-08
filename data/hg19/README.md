@@ -1,0 +1,1 @@
+The Hg19 reference alignment can be found [here](https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/latest/hg19.fa.gz).

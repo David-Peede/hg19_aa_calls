@@ -1,0 +1,12 @@
+wrapper.sh
+logs/
+notebooks/.ipynb_checkpoints/
+libs/__pycache__/
+aa_calls/tables/*.gz
+aa_calls/vcfs/*.gz
+data/hg19/*.gz
+data/homo_sapiens_ancestor_GRCh37_e71/*.fa
+data/homo_sapiens_ancestor_GRCh37_e71/*.bed
+data/panTro/*.gz
+tgp_info/aaf_tables/*.gz
+tgp_info/qc_tables/*.gz

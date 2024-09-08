@@ -1,0 +1,1 @@
+The panTro6 MAF can be found [here](https://hgdownload.soe.ucsc.edu/goldenPath/hg19/vsPanTro6/hg19.panTro6.synNet.maf.gz).

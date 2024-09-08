@@ -1,0 +1,25 @@
+This directory contains the ancestral sequences for Homo sapiens (GRCh37).
+
+The data have been extracted from the following alignment set:
+# Database: ensembl_compara_71@ens-staging2:3306
+# MethodLinkSpeciesSet: 6 primates EPO (548)
+
+In the EPO (Enredo-Pecan-Ortheus) pipeline, Ortheus infers ancestral states
+from the Pecan alignments. The confidence in the ancestral call is determined
+by comparing the call to the ancestor of the ancestral sequence as well as
+the 'sister' sequence of the query species. For instance, using a human-chimp-
+macaque alignment to get the ancestral state of human, the human-chimp ancestor
+sequence is compared to the chimp and to the human-chimp-macaque ancestor. A
+high-confidence call is made whn all three sequences agree. If the ancestral
+sequence agrees with one of the other two sequences only, we tag the call as
+a low-confidence call. If there is more disagreement, the call is not made.
+
+The convention for the sequence is:
+ACTG : high-confidence call, ancestral state supproted by the other two sequences
+actg : low-confindence call, ancestral state supported by one sequence only
+N    : failure, the ancestral state is not supported by any other sequence
+-    : the extant species contains an insertion at this postion
+.    : no coverage in the alignment
+
+You should find a summary.txt file, which contains statistics about the quality
+of the calls.
