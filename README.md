@@ -17,7 +17,7 @@ wget -P ./data/panTro https://hgdownload.soe.ucsc.edu/goldenPath/hg19/vsPanTro6/
 
 # Download the Enredo-Pecan-Ortheus (EPO) ancestral sequences.
 wget -P ./data https://ftp.ensembl.org/pub/release-74/fasta/ancestral_alleles/homo_sapiens_ancestor_GRCh37_e71.tar.bz2
-Extract and then delete the EPO tar file.
+# Extract and then delete the EPO tar file.
 cd ./data
 tar -xvjf homo_sapiens_ancestor_GRCh37_e71.tar.bz2
 rm homo_sapiens_ancestor_GRCh37_e71.tar.bz2

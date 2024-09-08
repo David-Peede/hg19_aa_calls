@@ -6,4 +6,5 @@ The tables have the following columns:
 3. `rsID`: SNP ID.
 4. `REF`: Reference allele.
 5. `ALT`: Alternative allele(s).
+
 Columns 6 - 10 are the alternative allele frequencies per super population and columns 11 - 36 are the alternative allele frequencies per population.
