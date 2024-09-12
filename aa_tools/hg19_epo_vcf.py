@@ -43,8 +43,9 @@ def create_hg19_epo_vcf(chrom, buffer_size):
         ref, alt = epo_aln[pos]
         # If both the reference and alternative allele are valid alleles.
         if ref not in skip_set and alt not in skip_set:
-            # Determine the genotype.
+            # Determine the genotype and alternative allele.
             gt = gt_same if ref == alt else gt_diff
+            alt = '.' if ref == alt else alt
             # Update the VCF lines.
             vcf_lines.append(f'{chrom}\t{pos}\t.\t{ref}\t{alt}\t.\tPASS\t.\tGT\t{gt}\n')
             # If the number of lines exceeds the buffer size.
